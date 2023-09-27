@@ -7,22 +7,12 @@ import Footer from "./components/footer/Footer";
 import List from "./components/list/List";
 import Userlist from "./components/userlist/Userlist";
 import UserAxios from "./components/axios/UserAxios";
-import Login from "./components/login/Login";
-import Register from "./components/Register/Register";
+import RandomUser from "./components/randomuser/RandomUser";
 
 function App() {
   return (
     <div className="App">
-      <Register />
-      {/* <Login />
-      <UserAxios /> */}
-      {/* <Userlist /> */}
-      {/* <List /> */}
-      {/* <Header />
-      <Footer /> */}
-      {/* <Profile /> */}
-      {/* <Image />
-      <Counter /> */}
+      <RandomUser />
     </div>
   );
 }
