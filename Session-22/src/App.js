@@ -5,12 +5,14 @@ import RandomUser from "./components/randomuser/RandomUser";
 
 import Nav from "./components/nav/Nav";
 import Input from "./components/parent-child/task/Input";
+import A from "./components/contextapi/A";
 
 function App() {
   return (
     <div className="App">
       <Nav />
-      <RandomUser />
+      <A />
+      {/* <RandomUser /> */}
       {/* <Parent /> */}
       {/* <Input /> */}
     </div>
