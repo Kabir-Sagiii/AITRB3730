@@ -1,5 +1,5 @@
 import axios from "axios";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Table from "../table/Table";
 import NoUser from "../nouser/NoUser";
 import Radios from "../radios/Radios";
@@ -10,6 +10,20 @@ function RandomUser() {
   const [randomusers, setRandomUsers] = useState([]);
 
   const [data, setData] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("https://randomuser.me/api/?results=30")
+      .then((res) => {
+        console.log(res.data.results);
+        setRandomUsers(res.data.results);
+        setData(res.data.results);
+      })
+      .catch((error) => {
+        alert("Something went wrong");
+        console.log(error);
+      });
+  }, []);
 
   const filterData = (event) => {
     if (event.target.id === "all") {
