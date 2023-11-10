@@ -18,6 +18,8 @@ function Profile() {
     title: "Check to Switch Dark Mode",
   });
 
+  console.log("Profile comp");
+
   const changeToJay = () => {
     setProfile({
       username: "Jay Sinha",

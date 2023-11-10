@@ -1,6 +1,7 @@
 import "./section3.css";
 
 function Section3(props) {
+  console.log("Section-3");
   return (
     <div className="Section3">
       <div>

@@ -2,6 +2,7 @@ import "./Header.css";
 import ProductList from "../homeproductlist/ProductList";
 
 function Header() {
+  console.log("header");
   return (
     <div className="Header">
       <ProductList

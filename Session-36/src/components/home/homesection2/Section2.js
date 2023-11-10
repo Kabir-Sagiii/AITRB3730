@@ -1,6 +1,7 @@
 import React from "react";
 import "./Section2.css";
 function Section2() {
+  console.log("section-2");
   return (
     <div className="section2Container">
       <div className="d1">

@@ -1,6 +1,7 @@
 import "./section4.css";
 
 function Section4() {
+  console.log("Section-4");
   return (
     <div className="Section4">
       <div className="section4Content">

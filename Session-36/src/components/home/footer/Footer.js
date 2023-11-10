@@ -1,6 +1,7 @@
 import "./Footer.css";
 
 function Footer() {
+  console.log("footer");
   return (
     <div className="Footer">
       <h2>Footer Component</h2>

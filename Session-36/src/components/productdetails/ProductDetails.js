@@ -27,6 +27,8 @@ function ProductDetails() {
         alert("Error while accessing the data");
       });
   }, []);
+
+  console.log("Product Details");
   return (
     <div>
       <h2 style={{ textAlign: "center" }}>
